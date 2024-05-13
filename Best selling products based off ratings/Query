@@ -1,0 +1,11 @@
+SELECT 
+    product_id,
+    product_name,
+    category,
+    rating,
+    rating_count 
+FROM 
+  `strong-ward-419921.amazon.amazon_sales` 
+ORDER BY
+  rating_count DESC
+LIMIT 10
