@@ -2,14 +2,18 @@ Variability in Discount Levels:
 The average discount percentages vary significantly across different categories, ranging from 0% to as high as 90%. 
 This indicates that discounting strategies vary widely depending on the product category and market conditions.
 
-Electronics Categories: Several electronics categories, such as "Electronics|Mobiles&Accessories|MobileAccessories|Stands" and "Electronics|Headphones,Earbuds&Accessories|Adapters," have relatively high average discount percentages (above 60%). 
+Electronics Categories:
+Several electronics categories, such as "Electronics|Mobiles&Accessories|MobileAccessories|Stands" and "Electronics|Headphones,Earbuds&Accessories|Adapters," have relatively high average discount percentages (above 60%). 
 This suggests that these categories may be highly competitive, with frequent promotions and discounts aimed at attracting customers.
 
-Home & Kitchen Categories: Categories related to home and kitchen appliances, such as "Home&Kitchen|Heating,Cooling&AirQuality|Humidifiers" and "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|Juicers," have moderate average discount percentages (around 30%-50%). 
+Home & Kitchen Categories: 
+Categories related to home and kitchen appliances, such as "Home&Kitchen|Heating,Cooling&AirQuality|Humidifiers" and "Home&Kitchen|Kitchen&HomeAppliances|SmallKitchenAppliances|Juicers," have moderate average discount percentages (around 30%-50%). 
 These categories may see occasional promotions but not as frequently as highly competitive electronics categories.
 
-Low Discount Categories: Some categories, such as "Home&Kitchen|CraftMaterials|PaintingMaterials" and "Electronics|Cameras&Photography|MediaStreamingDevices|StreamingClients," have an average discount percentage of 0%. 
+Low Discount Categories: 
+Some categories, such as "Home&Kitchen|CraftMaterials|PaintingMaterials" and "Electronics|Cameras&Photography|MediaStreamingDevices|StreamingClients," have an average discount percentage of 0%. 
 This suggests that products in these categories are less frequently discounted, possibly due to higher perceived value or lower competition.
 
-Outliers: There are a few categories with exceptionally high average discount percentages, such as "Computers&Accessories|Accessories&Peripherals|InternalHardDrives" (80%) and "Home&Kitchen|CraftMaterials|Scrapbooking|Tape" (90%).
+Outliers: 
+There are a few categories with exceptionally high average discount percentages, such as "Computers&Accessories|Accessories&Peripherals|InternalHardDrives" (80%) and "Home&Kitchen|CraftMaterials|Scrapbooking|Tape" (90%).
 These outliers may indicate specific marketing strategies or seasonal items.
