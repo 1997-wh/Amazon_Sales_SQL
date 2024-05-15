@@ -1,0 +1,31 @@
+WITH TopCategories AS (
+  SELECT 'Computers&Accessories|Accessories&Peripherals|Cables&Accessories|Cables|USBCables' AS category
+  UNION ALL
+  SELECT 'Electronics|WearableTechnology|SmartWatches'
+  UNION ALL
+  SELECT 'Electronics|Mobiles&Accessories|Smartphones&BasicMobiles|Smartphones'
+  UNION ALL
+  SELECT 'Electronics|HomeTheater,TV&Video|Televisions|SmartTelevisions'
+  UNION ALL
+  SELECT 'Electronics|Headphones,Earbuds'
+),
+CategoryAnalysis AS (
+  SELECT
+    category,
+    COUNT(*) AS review_count,
+    AVG(CAST(rating AS FLOAT64)) AS average_rating
+  FROM
+    `strong-ward-419921.amazon.amazon_sales`
+  WHERE
+    category IN (SELECT category FROM TopCategories)
+  GROUP BY
+    category
+)
+SELECT
+  category,
+  review_count,
+  average_rating
+FROM
+  CategoryAnalysis
+ORDER BY
+  review_count DESC;
