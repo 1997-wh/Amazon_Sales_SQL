@@ -1,0 +1,14 @@
+SELECT
+  user_id,
+  COUNT(*) AS review_count,
+  AVG(CAST(rating AS FLOAT64)) AS average_rating
+FROM
+  `strong-ward-419921.amazon.amazon_sales`
+WHERE
+  SAFE_CAST(rating AS FLOAT64) IS NOT NULL
+GROUP BY
+  user_id
+ORDER BY
+  review_count DESC
+LIMIT
+  5;
