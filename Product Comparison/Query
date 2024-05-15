@@ -1,0 +1,22 @@
+WITH Product_Info AS (
+    SELECT 
+        product_id,
+        AVG(CAST(rating AS FLOAT64)) AS average_rating,
+        AVG(discount_percentage) AS average_discount_percentage
+    FROM 
+        `strong-ward-419921.amazon.amazon_sales`
+    WHERE
+        product_id IN ('B09XXZXQC1', 'B08L879JSN')
+    GROUP BY 
+        product_id
+)
+
+SELECT 
+    MAX(IF(product_id = 'B09XXZXQC1', product_id, NULL)) AS product_id_A,
+    MAX(IF(product_id = 'B09XXZXQC1', average_rating, NULL)) AS average_rating_A,
+    MAX(IF(product_id = 'B08L879JSN', product_id, NULL)) AS product_id_B,
+    MAX(IF(product_id = 'B08L879JSN', average_rating, NULL)) AS average_rating_B,
+    MAX(IF(product_id = 'B09XXZXQC1', average_discount_percentage, NULL)) AS average_discount_percentage_A,
+    MAX(IF(product_id = 'B08L879JSN', average_discount_percentage, NULL)) AS average_discount_percentage_B
+FROM 
+    Product_Info;
