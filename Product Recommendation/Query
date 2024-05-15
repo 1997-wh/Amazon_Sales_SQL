@@ -1,0 +1,14 @@
+SELECT 
+    product_id,
+    product_name,
+    AVG(CAST(rating AS FLOAT64)) AS average_rating,
+    MAX(rating_count) AS max_rating_count
+FROM 
+    `strong-ward-419921.amazon.amazon_sales`
+WHERE 
+    SAFE_CAST(rating AS FLOAT64) IS NOT NULL
+GROUP BY 
+    product_id, product_name
+ORDER BY 
+    average_rating DESC
+LIMIT 1;
